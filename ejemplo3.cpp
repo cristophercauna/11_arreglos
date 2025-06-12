@@ -2,7 +2,12 @@
 using namespace std;
 int main(){
     int i,aux,n,A[20];
+    cout<<"Ingrese cuantos elementos habran"<<endl;
     cin>>n;
+    if (n>20 || n<=0) {
+        cout<<"Cantidad inválida. Debe ser entre 1 y 20." << endl;
+        return 1;
+    }
     for(i=0;i<n;i++){
         cin>>A[i];
     }
